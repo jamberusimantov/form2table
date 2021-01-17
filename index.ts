@@ -11,6 +11,9 @@ class User {
         this.phone = phone;
         this.age = age;
     }
+    userIntro() {
+        return `hi i'm ${this.lName} ${this.fName} and i'm ${this.age} years old`
+    }
 }
 function printInput(arr: string[]): void {
     if (arr[0] != 'addToTableBtn' && arr[0] != 'resetAddToTableBtn') {

@@ -6,6 +6,9 @@ var User = /** @class */ (function () {
         this.phone = phone;
         this.age = age;
     }
+    User.prototype.userIntro = function () {
+        return "hi i'm " + this.lName + " " + this.fName + " and i'm " + this.age + " years old";
+    };
     return User;
 }());
 function printInput(arr) {
